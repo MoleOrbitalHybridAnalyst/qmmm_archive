@@ -1,0 +1,119 @@
+LAMMPS (2 Aug 2023)
+OMP_NUM_THREADS environment is not set. Defaulting to 1 thread. (src/comm.cpp:98)
+  using 1 OpenMP thread(s) per MPI task
+# Created by charmm2lammps v1.9.2 on Fri Jan 19 10:56:00 PST 2024
+# Command: charmm2lammps.pl -l=121.5 prot_na cqm-eqb
+
+units           real
+neigh_modify    delay 0 every 1
+
+atom_style      full
+bond_style      harmonic
+angle_style     charmm
+dihedral_style  charmm
+improper_style  harmonic
+
+pair_style      lj/charmm/coul/long 8 12
+pair_modify     mix arithmetic
+kspace_style    pppm 1e-6
+
+read_data       cqm-eqb.data
+Reading data file ...
+  orthogonal box = (-45.699 -49.3335 -46.0985) to (75.801 72.1665 75.4015)
+  1 by 1 by 1 MPI processor grid
+  reading atoms ...
+  182696 atoms
+  scanning bonds ...
+  4 = max bonds/atom
+  scanning angles ...
+  6 = max angles/atom
+  scanning dihedrals ...
+  24 = max dihedrals/atom
+  scanning impropers ...
+  2 = max impropers/atom
+  reading bonds ...
+  126284 bonds
+  reading angles ...
+  80926 angles
+  reading dihedrals ...
+  42595 dihedrals
+  reading impropers ...
+  2299 impropers
+Finding 1-2 1-3 1-4 neighbors ...
+  special bond factors lj:    0        0        0       
+  special bond factors coul:  0        0        0       
+     4 = max # of 1-2 neighbors
+     9 = max # of 1-3 neighbors
+    19 = max # of 1-4 neighbors
+    21 = max # of special neighbors
+  special bonds CPU = 0.055 seconds
+  read_data CPU = 1.227 seconds
+
+pair_coeff      33 36 0.154919 3.24019863787641 0.154919 3.24019863787641
+pair_coeff      41 43 0.083875 3.32394311738161 0.083875 3.32394311738161
+
+special_bonds   charmm
+thermo          1
+thermo_style    multi
+
+group qm id 22 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 3884 3886 3887 3888 3889 3890 3891 3892 3893 3894 5425 5427 5428 5429 5430 5431 5432 5433 5434 5435 5436 5437 5438 5439 5440 5441 5442 7866 7868 7869 7870 7871 7872 7873 7897 7899 7900 7901 7902 7903 7904 7905 7906 7907 8321 8323 8324 8325 8326 8327 8328 8329 8330 8961 8963 8964 8965 8966 8967 8968 8969 8970 13473 13501 13502 13503 13504 13505 13506 13507 13508 13509 13510 13511 13512 13513 13514 13515 13516 13517 16218 16219 16220 21459 21460 21461 56067 56068 56069 65637 65638 65639 76824 76825 76826 83058 83059 83060 99828 99829 99830 102303 102304 102305 102732 102733 102734 102738 102739 102740 102816 102817 102818 108342 108343 108344 115155 115156 115157 126216 126217 126218 129147 129148 129149 148719 148720 148721 159021 159022 159023 172104 172105 172106 178287 178288 178289
+156 atoms in group qm
+delete_bonds qm multi remove
+System init for delete_bonds ...
+PPPM initialization ...
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.27884231
+  grid = 135 135 135
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.00038993892
+  estimated relative force accuracy = 1.1742895e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 2863288 2460375
+Generated 2344 of 2346 mixed pair_coeff terms from arithmetic mixing rule
+Neighbor list info ...
+  update: every = 1 steps, delay = 0 steps, check = yes
+  max neighbors/atom: 2000, page size: 100000
+  master list distance cutoff = 14
+  ghost atom cutoff = 14
+  binsize = 7, bins = 18 18 18
+  1 neighbor lists, perpetual/occasional/extra = 1 0 0
+  (1) pair lj/charmm/coul/long, perpetual
+      attributes: half, newton on
+      pair build: half/bin/newton
+      stencil: half/bin/3d
+      bin: standard
+Deleting bonds ...
+  126156 total bonds, 126156 turned on, 0 turned off
+  80756 total angles, 80756 turned on, 0 turned off
+  42411 total dihedrals, 42411 turned on, 0 turned off
+  2291 total impropers, 2291 turned on, 0 turned off
+neigh_modify exclude group qm qm
+group qm_no_ca id 24 25 26 27 28 29 30 31 32 33 34 35 36 37 38 39 40 41 3886 3887 3888 3889 3890 3891 3892 3893 3894 5427 5428 5429 5430 5431 5432 5433 5434 5435 5436 5437 5438 5439 5440 5441 5442 7868 7869 7870 7871 7872 7873 7899 7900 7901 7902 7903 7904 7905 7906 7907 8323 8324 8325 8326 8327 8328 8329 8330 8963 8964 8965 8966 8967 8968 8969 8970 13501 13502 13503 13504 13505 13506 13507 13508 13509 13510 13511 13512 13513 13514 13515 13516 13517 16218 16219 16220 21459 21460 21461 56067 56068 56069 65637 65638 65639 76824 76825 76826 83058 83059 83060 99828 99829 99830 102303 102304 102305 102732 102733 102734 102738 102739 102740 102816 102817 102818 108342 108343 108344 115155 115156 115157 126216 126217 126218 129147 129148 129149 148719 148720 148721 159021 159022 159023 172104 172105 172106 178287 178288 178289
+148 atoms in group qm_no_ca
+set group qm_no_ca charge 0.0
+Setting atom values ...
+  148 settings made for charge
+run 0 pre yes post no
+WARNING: No fixes with time integration, atoms won't move (src/verlet.cpp:60)
+PPPM initialization ...
+WARNING: System is not charge neutral, net charge = 3 (src/kspace.cpp:327)
+  using 12-bit tables for long-range coulomb (src/kspace.cpp:342)
+  G vector (1/distance) = 0.27884101
+  grid = 135 135 135
+  stencil order = 5
+  estimated absolute RMS force accuracy = 0.00038964875
+  estimated relative force accuracy = 1.1734156e-06
+  using double precision FFTW3
+  3d grid and FFT values/proc = 2863288 2460375
+Generated 2344 of 2346 mixed pair_coeff terms from arithmetic mixing rule
+WARNING: Neighbor exclusions used with KSpace solver may give inconsistent Coulombic energies (src/neighbor.cpp:654)
+WARNING: Inconsistent image flags (src/domain.cpp:815)
+Per MPI rank memory allocation (min/avg/max) = 1107 | 1107 | 1107 Mbytes
+------------ Step              0 ----- CPU =            0 (sec) -------------
+TotEng   =   -556741.8795 KinEng   =         0.0000 Temp     =         0.0000 
+PotEng   =   -556741.8795 E_bond   =      3919.9839 E_angle  =      7480.9646 
+E_dihed  =      8426.1996 E_impro  =       424.3468 E_vdwl   =    100780.3280 
+E_coul   =   2472930.1375 E_long   =  -3150703.8399 Press    =     25346.5533
+Loop time of 1.162e-06 on 1 procs for 0 steps with 182696 atoms
+
+Total wall time: 0:02:35
