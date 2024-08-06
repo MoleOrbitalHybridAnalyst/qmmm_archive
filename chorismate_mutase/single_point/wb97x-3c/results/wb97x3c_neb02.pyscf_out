@@ -1,0 +1,163 @@
+
+
+******** <class 'gpu4pyscf.df.df_jk.DFRKS'> ********
+method = DFRKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'gpu4pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = False
+chkfile to save SCF result = /tmp/tmpj_ziqs9o
+max_memory 4000 MB (current use 414 MB)
+XC library pyscf.dft.libxc version 6.1.0
+    unable to decode the reference due to https://github.com/NVIDIA/cuda-python/issues/29
+XC functionals = wb97xv
+    N. Mardirossian and M. Head-Gordon.,  Phys. Chem. Chem. Phys. 16, 9904-9924 (2014)
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x7f6c03df8700>
+grids dens level: 3
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x7f6c03df8550>
+small_rho_cutoff = 1e-07
+Set gradient conv threshold to 3.16228e-05
+Initial guess from minao.
+num shells = 531, num cGTOs = 1519
+    [0 2] : 23
+    [0 3] : 20
+    [0 4] : 23
+    [0 5] : 20
+    [1 2] : 43
+    [1 4] : 23
+    [2 2] : 23
+    [0 1] : 241
+    [1 1] : 155
+    [2 1] : 89
+    [3 1] : 23
+    [4 1] : 23
+size of aux basis 1519
+    [0 2] : 23
+    [0 3] : 20
+    [0 4] : 23
+    [0 5] : 20
+    [1 2] : 43
+    [1 4] : 23
+    [2 2] : 23
+    [0 1] : 241
+    [1 1] : 155
+    [2 1] : 89
+    [3 1] : 23
+    [4 1] : 23
+size of aux basis 736
+atom H rad-grids = 50, ang-grids = [ 50  50  50  50  50  50  50  50  50  50  50  50  50  50  86  86  86  86
+ 266 266 266 266 302 302 302 302 302 302 302 302 302 302 302 302 302 266
+ 266 266 266 266 266 266 266 266 266 266 266 266 266 266]
+atom C rad-grids = 75, ang-grids = [ 50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50
+  50  50  50  50  50  86  86  86  86  86  86  86  86  86  86 266 266 266
+ 266 266 266 266 302 302 302 302 302 302 302 302 302 302 302 302 302 302
+ 302 302 302 302 302 302 266 266 266 266 266 266 266 266 266 266 266 266
+ 266 266 266]
+atom N rad-grids = 75, ang-grids = [ 50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50
+  50  50  50  50  50  86  86  86  86  86  86  86  86  86 266 266 266 266
+ 266 266 266 302 302 302 302 302 302 302 302 302 302 302 302 302 302 302
+ 302 302 302 302 266 266 266 266 266 266 266 266 266 266 266 266 266 266
+ 266 266 266]
+atom O rad-grids = 75, ang-grids = [ 50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50
+  50  50  50  50  86  86  86  86  86  86  86  86  86 266 266 266 266 266
+ 266 266 302 302 302 302 302 302 302 302 302 302 302 302 302 302 302 302
+ 302 302 302 266 266 266 266 266 266 266 266 266 266 266 266 266 266 266
+ 266 266 266]
+Padding 62 grids
+tot grids = 522880
+    [0 2] : 23
+    [0 3] : 20
+    [0 4] : 23
+    [0 5] : 20
+    [1 2] : 43
+    [1 4] : 23
+    [2 2] : 23
+Padding 2 basis for l=0
+Padding 2 basis for l=1
+Padding 1 basis for l=2
+Drop grids 97609
+prune_by_density_: 73 padding grids
+    [0 2] : 23
+    [0 3] : 20
+    [0 4] : 23
+    [0 5] : 20
+    [1 2] : 43
+    [1 4] : 23
+    [2 2] : 23
+Padding 2 basis for l=0
+Padding 2 basis for l=1
+Padding 1 basis for l=2
+GPU Memory 74.915 GB available, block size = 128
+GPU Memory 74.915 GB available, block size = 128
+E1 = -2598.247317748227  Ecoul = 1328.6271170486073  Exc = -76.60184854305516
+init E= -218.132071946758
+GPU Memory 74.905 GB available, block size = 128
+GPU Memory 74.905 GB available, block size = 128
+E1 = -2592.273689185452  Ecoul = 1307.032038118891  Exc = -59.99416294810915
+cycle= 1 E= -217.145836718753  delta_E= 0.986  |ddm|= 10.1
+GPU Memory 74.903 GB available, block size = 128
+GPU Memory 74.903 GB available, block size = 128
+E1 = -2610.9216683031345  Ecoul = 1327.7399931251948  Exc = -62.2819377775523
+cycle= 2 E= -217.373635659575  delta_E= -0.228  |ddm|= 3.24
+GPU Memory 74.900 GB available, block size = 128
+GPU Memory 74.901 GB available, block size = 128
+E1 = -2601.722920198261  Ecoul = 1316.6477761596134  Exc = -60.93459088456538
+cycle= 3 E= -217.919757627296  delta_E= -0.546  |ddm|= 1.72
+GPU Memory 74.897 GB available, block size = 128
+GPU Memory 74.898 GB available, block size = 128
+E1 = -2602.189976006679  Ecoul = 1317.1662061340899  Exc = -61.01760281627481
+cycle= 4 E= -217.951395392947  delta_E= -0.0316  |ddm|= 0.431
+GPU Memory 74.895 GB available, block size = 128
+GPU Memory 74.896 GB available, block size = 128
+E1 = -2602.5058108056137  Ecoul = 1317.538296518896  Exc = -61.078494558768085
+cycle= 5 E= -217.956031549569  delta_E= -0.00464  |ddm|= 0.186
+GPU Memory 74.892 GB available, block size = 128
+GPU Memory 74.893 GB available, block size = 128
+E1 = -2602.6038374154627  Ecoul = 1317.6312678521617  Exc = -61.07395535802214
+cycle= 6 E= -217.956547625406  delta_E= -0.000516  |ddm|= 0.0572
+GPU Memory 74.890 GB available, block size = 128
+GPU Memory 74.890 GB available, block size = 128
+E1 = -2602.55221482476  Ecoul = 1317.5793690104651  Exc = -61.07375751087188
+cycle= 7 E= -217.95662602925  delta_E= -7.84e-05  |ddm|= 0.0248
+GPU Memory 74.887 GB available, block size = 128
+GPU Memory 74.888 GB available, block size = 128
+E1 = -2602.5495298232836  Ecoul = 1317.575745158805  Exc = -61.07283204486216
+cycle= 8 E= -217.956639413424  delta_E= -1.34e-05  |ddm|= 0.0119
+GPU Memory 74.885 GB available, block size = 128
+GPU Memory 74.885 GB available, block size = 128
+E1 = -2602.551391229714  Ecoul = 1317.5777749010322  Exc = -61.07300277318207
+cycle= 9 E= -217.956641805947  delta_E= -2.39e-06  |ddm|= 0.00456
+GPU Memory 74.885 GB available, block size = 128
+GPU Memory 74.885 GB available, block size = 128
+E1 = -2602.551913166225  Ecoul = 1317.578498176314  Exc = -61.07320436670959
+cycle= 10 E= -217.956642060704  delta_E= -2.55e-07  |ddm|= 0.00162
+GPU Memory 74.885 GB available, block size = 128
+GPU Memory 74.885 GB available, block size = 128
+E1 = -2602.5516622688638  Ecoul = 1317.578154426997  Exc = -61.07311155820824
+cycle= 11 E= -217.956642104158  delta_E= -4.35e-08  |ddm|= 0.000629
+GPU Memory 74.885 GB available, block size = 128
+GPU Memory 74.885 GB available, block size = 128
+E1 = -2602.551417253222  Ecoul = 1317.5778927088213  Exc = -61.0730948699502
+cycle= 12 E= -217.956642118434  delta_E= -1.43e-08  |ddm|= 0.000385
+GPU Memory 74.885 GB available, block size = 128
+GPU Memory 74.885 GB available, block size = 128
+E1 = -2602.5516136422048  Ecoul = 1317.5781115464372  Exc = -61.07311732155524
+cycle= 13 E= -217.956642121406  delta_E= -2.97e-09  |ddm|= 0.000151
+GPU Memory 74.885 GB available, block size = 128
+GPU Memory 74.885 GB available, block size = 128
+E1 = -2602.5516179056476  Ecoul = 1317.5781139613482  Exc = -61.073115473597646
+cycle= 14 E= -217.95664212198  delta_E= -5.74e-10  |ddm|= 7.01e-05
+    CPU time for                                                SCF     10.64 sec, wall time      9.76 sec, GPU time for   9762.50 ms
+converged SCF energy = -217.95664212198
+E(wb97x-3c) = -218.02064245427457

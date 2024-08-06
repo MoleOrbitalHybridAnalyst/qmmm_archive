@@ -1,0 +1,5 @@
+! DLPNO-CCSD(T) cc-pVQZ cc-pVQZ/C TIGHTPNO TIGHTSCF
+%maxcore 10000
+%pal
+nprocs 32
+end

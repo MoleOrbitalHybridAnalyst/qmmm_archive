@@ -1,0 +1,142 @@
+
+
+******** <class 'gpu4pyscf.dft.rks.RKS'> ********
+method = RKS
+initial guess = minao
+damping factor = 0
+level_shift factor = 0
+DIIS = <class 'gpu4pyscf.scf.diis.CDIIS'>
+diis_start_cycle = 1
+diis_space = 8
+SCF conv_tol = 1e-09
+SCF conv_tol_grad = None
+SCF max_cycles = 50
+direct_scf = True
+direct_scf_tol = 1e-13
+chkfile to save SCF result = /tmp/tmph6q9mo5w
+max_memory 4000 MB (current use 409 MB)
+XC library pyscf.dft.libxc version 6.1.0
+    unable to decode the reference due to https://github.com/NVIDIA/cuda-python/issues/29
+XC functionals = pbe
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 77, 3865 (1996)
+    J. P. Perdew, K. Burke, and M. Ernzerhof.,  Phys. Rev. Lett. 78, 1396 (1997)
+radial grids: 
+    Treutler-Ahlrichs [JCP 102, 346 (1995); DOI:10.1063/1.469408] (M4) radial grids
+    
+becke partition: Becke, JCP 88, 2547 (1988); DOI:10.1063/1.454033
+pruning grids: <function nwchem_prune at 0x7ff3b5df4280>
+grids dens level: 3
+symmetrized grids: False
+atomic radii adjust function: <function treutler_atomic_radii_adjust at 0x7ff3b5df40d0>
+small_rho_cutoff = 1e-07
+Set gradient conv threshold to 3.16228e-05
+Initial guess from minao.
+atom H rad-grids = 50, ang-grids = [ 50  50  50  50  50  50  50  50  50  50  50  50  50  50  86  86  86  86
+ 266 266 266 266 302 302 302 302 302 302 302 302 302 302 302 302 302 266
+ 266 266 266 266 266 266 266 266 266 266 266 266 266 266]
+atom C rad-grids = 75, ang-grids = [ 50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50
+  50  50  50  50  50  86  86  86  86  86  86  86  86  86  86 266 266 266
+ 266 266 266 266 302 302 302 302 302 302 302 302 302 302 302 302 302 302
+ 302 302 302 302 302 302 266 266 266 266 266 266 266 266 266 266 266 266
+ 266 266 266]
+atom N rad-grids = 75, ang-grids = [ 50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50
+  50  50  50  50  50  86  86  86  86  86  86  86  86  86 266 266 266 266
+ 266 266 266 302 302 302 302 302 302 302 302 302 302 302 302 302 302 302
+ 302 302 302 302 266 266 266 266 266 266 266 266 266 266 266 266 266 266
+ 266 266 266]
+atom O rad-grids = 75, ang-grids = [ 50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50  50
+  50  50  50  50  86  86  86  86  86  86  86  86  86 266 266 266 266 266
+ 266 266 302 302 302 302 302 302 302 302 302 302 302 302 302 302 302 302
+ 302 302 302 266 266 266 266 266 266 266 266 266 266 266 266 266 266 266
+ 266 266 266]
+Padding 62 grids
+tot grids = 522880
+    [0 1] : 43
+    [0 3] : 43
+    [0 6] : 23
+    [1 1] : 43
+    [1 3] : 23
+    [2 1] : 23
+Padding 3 basis for l=0
+Padding 2 basis for l=1
+Padding 1 basis for l=2
+Drop grids 103414
+prune_by_density_: 118 padding grids
+    [0 1] : 43
+    [0 3] : 43
+    [0 6] : 23
+    [1 1] : 43
+    [1 3] : 23
+    [2 1] : 23
+    CPU time for                                  Initialize q_cond      4.01 sec, wall time      0.06 sec, GPU time for     56.19 ms
+    CPU time for                               Initialize GPU cache      2.99 sec, wall time      0.04 sec, GPU time for     35.61 ms
+    CPU time for                                   vj and vk on gpu     26.59 sec, wall time      0.51 sec, GPU time for    505.83 ms
+E1 = -5584.740369893775  Ecoul = 2557.0020617176096  Exc = -153.4164575111152
+init E= -1162.77319012518
+    CPU time for                                   vj and vk on gpu     20.29 sec, wall time      0.41 sec, GPU time for    407.53 ms
+E1 = -5637.820744188445  Ecoul = 2617.916212678776  Exc = -157.39156865103553
+cycle= 1 E= -1158.9145245986  delta_E= 3.86  |ddm|= 6.71
+    CPU time for                                   vj and vk on gpu     18.57 sec, wall time      0.31 sec, GPU time for    305.79 ms
+E1 = -5573.453400291191  Ecoul = 2566.1956036854294  Exc = -150.98560054589922
+cycle= 2 E= -1139.86182158956  delta_E= 19.1  |ddm|= 20.1
+    CPU time for                                   vj and vk on gpu     18.82 sec, wall time      0.37 sec, GPU time for    373.79 ms
+E1 = -5615.936700576239  Ecoul = 2599.679998271812  Exc = -154.44437002637704
+cycle= 3 E= -1152.3194967687  delta_E= -12.5  |ddm|= 20.2
+    CPU time for                                   vj and vk on gpu     17.38 sec, wall time      0.41 sec, GPU time for    406.94 ms
+E1 = -5614.963082794065  Ecoul = 2591.728626227273  Exc = -154.74030547208397
+cycle= 4 E= -1159.59318647677  delta_E= -7.27  |ddm|= 4.95
+    CPU time for                                   vj and vk on gpu     17.18 sec, wall time      0.41 sec, GPU time for    407.75 ms
+E1 = -5623.250848400325  Ecoul = 2600.2768595418374  Exc = -155.10266945695184
+cycle= 5 E= -1159.69508275334  delta_E= -0.102  |ddm|= 1.44
+    CPU time for                                   vj and vk on gpu     19.25 sec, wall time      0.45 sec, GPU time for    453.57 ms
+E1 = -5621.072533401015  Ecoul = 2598.048561732337  Exc = -155.0821630585667
+cycle= 6 E= -1159.72455916514  delta_E= -0.0295  |ddm|= 0.711
+    CPU time for                                   vj and vk on gpu     18.78 sec, wall time      0.47 sec, GPU time for    473.34 ms
+E1 = -5620.874253718676  Ecoul = 2597.7696644923935  Exc = -155.03059539814507
+cycle= 7 E= -1159.75360906233  delta_E= -0.029  |ddm|= 0.372
+    CPU time for                                   vj and vk on gpu     17.53 sec, wall time      0.35 sec, GPU time for    354.41 ms
+E1 = -5620.626552641911  Ecoul = 2597.481519207621  Exc = -154.99364044795126
+cycle= 8 E= -1159.75709832014  delta_E= -0.00349  |ddm|= 0.215
+    CPU time for                                   vj and vk on gpu     16.87 sec, wall time      0.43 sec, GPU time for    431.61 ms
+E1 = -5620.8509360430635  Ecoul = 2597.6936019413242  Exc = -154.98385115844636
+cycle= 9 E= -1159.75960969808  delta_E= -0.00251  |ddm|= 0.159
+    CPU time for                                   vj and vk on gpu     17.58 sec, wall time      0.32 sec, GPU time for    317.93 ms
+E1 = -5620.719979042827  Ecoul = 2597.5610197640754  Exc = -154.98334709297782
+cycle= 10 E= -1159.76073080963  delta_E= -0.00112  |ddm|= 0.133
+    CPU time for                                   vj and vk on gpu     17.51 sec, wall time      0.30 sec, GPU time for    298.03 ms
+E1 = -5620.700707610151  Ecoul = 2597.547412967706  Exc = -154.98914474930586
+cycle= 11 E= -1159.76086382965  delta_E= -0.000133  |ddm|= 0.0358
+    CPU time for                                   vj and vk on gpu     17.00 sec, wall time      0.50 sec, GPU time for    499.47 ms
+E1 = -5620.713309509834  Ecoul = 2597.5544227258542  Exc = -154.9835780447509
+cycle= 12 E= -1159.76088926663  delta_E= -2.54e-05  |ddm|= 0.087
+    CPU time for                                   vj and vk on gpu     18.13 sec, wall time      0.44 sec, GPU time for    435.96 ms
+E1 = -5620.6912029263185  Ecoul = 2597.5307993641363  Exc = -154.98207665268276
+cycle= 13 E= -1159.76090465276  delta_E= -1.54e-05  |ddm|= 0.0379
+    CPU time for                                   vj and vk on gpu     18.61 sec, wall time      0.35 sec, GPU time for    346.07 ms
+E1 = -5620.673103780053  Ecoul = 2597.5125383018976  Exc = -154.98191651842188
+cycle= 14 E= -1159.76090643448  delta_E= -1.78e-06  |ddm|= 0.0061
+    CPU time for                                   vj and vk on gpu     19.04 sec, wall time      0.36 sec, GPU time for    358.93 ms
+E1 = -5620.6900429499965  Ecoul = 2597.5304121778454  Exc = -154.98285183706983
+cycle= 15 E= -1159.76090704712  delta_E= -6.13e-07  |ddm|= 0.00223
+    CPU time for                                   vj and vk on gpu     17.85 sec, wall time      0.22 sec, GPU time for    220.02 ms
+E1 = -5620.69029305767  Ecoul = 2597.530717360298  Exc = -154.98290696719863
+cycle= 16 E= -1159.76090710247  delta_E= -5.53e-08  |ddm|= 0.00112
+    CPU time for                                   vj and vk on gpu     16.82 sec, wall time      0.28 sec, GPU time for    283.44 ms
+E1 = -5620.689829683991  Ecoul = 2597.5302134372737  Exc = -154.98286644861048
+cycle= 17 E= -1159.76090713323  delta_E= -3.08e-08  |ddm|= 0.000574
+    CPU time for                                   vj and vk on gpu     17.06 sec, wall time      0.36 sec, GPU time for    364.81 ms
+E1 = -5620.689311579406  Ecoul = 2597.5296291184886  Exc = -154.9828002418495
+cycle= 18 E= -1159.76090714067  delta_E= -7.44e-09  |ddm|= 0.000228
+    CPU time for                                   vj and vk on gpu     17.22 sec, wall time      0.31 sec, GPU time for    306.17 ms
+E1 = -5620.689440385296  Ecoul = 2597.529807289074  Exc = -154.9828496048183
+cycle= 19 E= -1159.76090713894  delta_E= 1.73e-09  |ddm|= 0.000131
+    CPU time for                                   vj and vk on gpu     17.23 sec, wall time      0.32 sec, GPU time for    320.83 ms
+E1 = -5620.6894456782475  Ecoul = 2597.529789165019  Exc = -154.98282618995015
+cycle= 20 E= -1159.76090714108  delta_E= -2.14e-09  |ddm|= 0.00015
+    CPU time for                                   vj and vk on gpu     16.24 sec, wall time      0.32 sec, GPU time for    319.77 ms
+E1 = -5620.6894367059995  Ecoul = 2597.5297714699323  Exc = -154.98281746709756
+cycle= 21 E= -1159.76090714106  delta_E= 1.41e-11  |ddm|= 5.11e-05
+    CPU time for                                                SCF    451.45 sec, wall time     11.68 sec, GPU time for  11679.94 ms
+converged SCF energy = -1159.76090714106
