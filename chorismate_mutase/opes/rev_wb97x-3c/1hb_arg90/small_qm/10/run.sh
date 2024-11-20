@@ -1,6 +1,5 @@
-exit
 export OMP_NUM_THREADS=1
-export CUDA_VISIBLE_DEVICES=???
+export CUDA_VISIBLE_DEVICES=2
 
 # latest plumed that supports opes flooding
 source ~/packages/plumed-2.9.0/sourceme.sh
@@ -15,4 +14,4 @@ sleep 60
 
 ~/packages/lammps-2Aug2023/build/lmp -in lmp.in > lmp.out &
 
-env OMP_NUM_THREADS=20 python -u driver.py > driver.out
+env OMP_NUM_THREADS=32 python -u driver.py > driver.out

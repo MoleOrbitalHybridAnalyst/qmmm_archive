@@ -14,7 +14,7 @@ from time import time
 from sys import argv
 from os import system, path, chdir, getcwd, environ
 
-lib.num_threads(32)
+lib.num_threads(4)
 home_dir = environ['HOME']
 
 
@@ -24,8 +24,8 @@ ele2radius = {'N': 0.71, 'H': 0.32, 'C': 0.75, 'CL': 0.99, 'O': 0.63, 'CL': 0.99
 charge = -1
 spin = 0
 
-hyb = 0.2745
-alpha = 0.3716
+hyb = 0.2764
+alpha = 0.2811
 auxbasis = {'C': './6311Gss-rifit.dat', 'H': './6311Gss-rifit.dat', 'O': './6311Gss-rifit.dat', 'N': './6311Gss-rifit.dat', 'P': './6311Gss-rifit.dat', 'S': './6311Gss-rifit.dat', 'Mg': './6311Gss-rifit.dat'}
 pseudo_bond_param_dir = f"{home_dir}/projects/pseudo_bond/jcp2008/refined_params/wb97x3c/separate"
 aspc_nvec = 4

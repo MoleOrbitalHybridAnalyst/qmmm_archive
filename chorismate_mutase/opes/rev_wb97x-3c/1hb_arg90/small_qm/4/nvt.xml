@@ -13,12 +13,12 @@
 
   <ffsocket mode="unix" name="qm">
     <latency>1e-3</latency>
-    <address>rb97_opesqm4</address>
+    <address>79_qm_4</address>
   </ffsocket>
 
   <ffsocket mode="unix" name="mm">
     <latency>1e-3</latency>
-    <address>rb97_opesmm4</address>
+    <address>79_mm_4</address>
   </ffsocket>
 
   <ffplumed name="plumed">

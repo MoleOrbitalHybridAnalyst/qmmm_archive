@@ -12,8 +12,8 @@ def loss(params):
     hyd = params[0]   # scales hf_sr
     alpha = params[1] # scales hf_lr
 
-    ref1 = -0.027374018043246906  # forward barrier at DLPNO-CCSD(T)/CBS
-    ref2 = -0.032599693900010616  # forward barrier wht R90 Flipped
+    ref1 = -0.02551875604081033   # forward barrier at LNO-CCSD(T)/CBS
+    ref2 = -0.030917344997078544  # forward barrier wht R90 Flipped
 
     eR  = get_energy(params, "../wb97x-3c/geoms/wb97x3c_neb00.xyz")
     eTS = get_energy(params, "../wb97x-3c/geoms/wb97x3c_neb04.xyz")

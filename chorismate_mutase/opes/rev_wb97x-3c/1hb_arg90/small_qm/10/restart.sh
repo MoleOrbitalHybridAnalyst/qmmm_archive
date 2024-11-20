@@ -1,5 +1,5 @@
 export OMP_NUM_THREADS=1
-export CUDA_VISIBLE_DEVICES=???
+export CUDA_VISIBLE_DEVICES=2
 
 perl -i -ne 's/#//; print' plumed.dat
 

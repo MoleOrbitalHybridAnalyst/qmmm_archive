@@ -2,5 +2,5 @@ import ipi_driver2 as drv
 from qmmm_efv import efv_scan
 
 atoms = drv.Atoms(efv_scan)
-client = drv.SocketClient(unixsocket='rb97_opesqm4')
+client = drv.SocketClient(unixsocket='79_qm_4')
 client.run(atoms)
