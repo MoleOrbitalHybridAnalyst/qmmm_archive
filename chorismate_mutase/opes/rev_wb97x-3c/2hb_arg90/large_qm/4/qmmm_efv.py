@@ -14,7 +14,7 @@ from time import time
 from sys import argv
 from os import system, path, chdir, getcwd, environ
 
-lib.num_threads(32)
+lib.num_threads(4)
 home_dir = environ['HOME']
 
 
