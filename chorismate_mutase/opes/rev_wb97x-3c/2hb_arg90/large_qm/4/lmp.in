@@ -26,5 +26,5 @@ delete_bonds    qm multi remove
 neigh_modify    exclude group qm qm
 set             group qm_no_ca charge 0.0
 
-fix             1 all ipi rb97opesmm4 123 unix
+fix             1 all ipi 65_mm_4 123 unix
 run             1000000

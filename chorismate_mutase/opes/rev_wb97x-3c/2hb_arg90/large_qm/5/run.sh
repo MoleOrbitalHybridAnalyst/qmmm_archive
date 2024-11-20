@@ -1,5 +1,5 @@
 export OMP_NUM_THREADS=1
-export CUDA_VISIBLE_DEVICES=1
+export CUDA_VISIBLE_DEVICES=2
 
 # latest plumed that supports opes flooding
 source ~/packages/plumed-2.9.0/sourceme.sh

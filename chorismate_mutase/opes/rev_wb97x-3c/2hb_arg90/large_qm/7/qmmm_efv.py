@@ -14,7 +14,7 @@ from time import time
 from sys import argv
 from os import system, path, chdir, getcwd, environ
 
-lib.num_threads(32)
+lib.num_threads(4)
 home_dir = environ['HOME']
 
 
@@ -160,7 +160,7 @@ def efv_scan(coords, box, init_dict):
     mf.screen_tol = screen_tol
     mf.conv_check = False
     mf._numint.libxc.is_nlc = lambda *args: False  # turn off VV10
-    mf._numint.rsh_and_hybrid_coeff = lambda *args, **kwargs: (0.3, alpha, hyb)
+    mf._numint.libxc.rsh_coeff = lambda *args : (0.3, alpha, hyb - alpha)
 
     s1e = cp.asarray(mf.get_ovlp())
     if 'dm_predictor' in init_dict:
@@ -194,7 +194,7 @@ def efv_scan(coords, box, init_dict):
     mf = itrf.add_mm_charges(
         mf, mm_coords, box_A, mm_charges, mm_radii, 
         rcut_hcore=rcut_hcore, rcut_ewald=rcut_ewald)
-    e_qmmm = mf.kernel(dm0=dm0).get()
+    e_qmmm = mf.kernel(dm0=dm0)
 
     t2 = time()
     print("PySCF energy time =", t2 - t1)

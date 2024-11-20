@@ -1,0 +1,73 @@
+----------------------------------------------
+using data[0:]
+----------------------------------------------
+estimated lnx mean: -9.217226488929658
+sample lnx mean: -9.280450712352577
+estimated rho: 0.18310256040767503
+estimated lnx variance: 0.30070560959933146
+estimated lnx sample variance: 0.03822787563432654
+estimated x mean: 0.00011542683590015418
+sample x mean: 0.00010845320954641704
+estimated x sample variance: 5.735170175966367e-10
+
+----------------------------------------------
+using data[1:]
+----------------------------------------------
+estimated lnx mean: -9.198283584318522
+sample lnx mean: -9.232286213688258
+estimated rho: 0.15718152110891848
+estimated lnx variance: 0.32798472558108205
+estimated lnx sample variance: 0.0435804818905531
+estimated x mean: 0.00011924966689560541
+sample x mean: 0.00011353915086995273
+estimated x sample variance: 7.088559375011752e-10
+
+----------------------------------------------
+using data[2:]
+----------------------------------------------
+estimated lnx mean: -9.224015430201527
+sample lnx mean: -9.206109333757654
+estimated rho: 0.1717520339257283
+estimated lnx variance: 0.36638298674806813
+estimated lnx sample variance: 0.05532782699907983
+estimated x mean: 0.00011847318181167032
+sample x mean: 0.0001175662516528614
+estimated x sample variance: 9.01047413064582e-10
+
+----------------------------------------------
+using data[3:]
+----------------------------------------------
+estimated lnx mean: -9.2605264261505
+sample lnx mean: -9.223428090790735
+estimated rho: 0.1589363313253928
+estimated lnx variance: 0.4092120939395985
+estimated lnx sample variance: 0.06761059253037821
+estimated x mean: 0.00011669809074422522
+sample x mean: 0.00011784356721586139
+estimated x sample variance: 1.0914649444788736e-09
+
+----------------------------------------------
+using data[4:]
+----------------------------------------------
+estimated lnx mean: -9.00924699972692
+sample lnx mean: -9.257654710672087
+estimated rho: 0.27372070968983975
+estimated lnx variance: 0.25216945258463713
+estimated lnx sample variance: 0.057837434619869
+estimated x mean: 0.00013870484864961994
+sample x mean: 0.00011676120711126099
+estimated x sample variance: 1.2201911512857814e-09
+
+----------------------------------------------
+min var found with data[0:]
+----------------------------------------------
+estimated lnx mean: -9.217226488929658
+sample lnx mean: -9.280450712352577
+estimated rho: 0.18310256040767503
+estimated lnx variance: 0.30070560959933146
+estimated lnx sample variance: 0.03822787563432654
+estimated x mean: 0.00011542683590015418
+sample x mean: 0.00010845320954641704
+estimated x sample variance: 5.735170175966367e-10
+final result: 0.00010845320954641704 +- 2.3948215332183665e-05
+

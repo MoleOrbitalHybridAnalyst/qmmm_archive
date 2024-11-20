@@ -1,5 +1,5 @@
 export OMP_NUM_THREADS=1
-export CUDA_VISIBLE_DEVICES=???
+export CUDA_VISIBLE_DEVICES=0
 
 perl -i -ne 's/#//; print' plumed.dat
 
@@ -16,4 +16,4 @@ sleep 60
 
 ~/packages/lammps-2Aug2023/build/lmp -in lmp.in >> lmp.out &
 
-env OMP_NUM_THREADS=20 python -u driver.py >> driver.out
+env OMP_NUM_THREADS=32 python -u driver.py >> driver.out
